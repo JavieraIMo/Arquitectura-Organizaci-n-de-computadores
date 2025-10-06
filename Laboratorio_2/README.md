@@ -83,4 +83,4 @@ Se desarrollaron tablas de verdad completas para los 16 códigos de entrada y la
 * `informe.pdf`: Documento con análisis teórico completo, tablas de verdad y mapas de Karnaugh
 
 ---
-*🏥 Laboratorio 2 - INF245 - Abril 2025*
+*🏥 Laboratorio 2 - INF245 - Octubre 2025*
