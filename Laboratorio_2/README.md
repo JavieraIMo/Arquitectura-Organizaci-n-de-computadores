@@ -79,7 +79,7 @@ Se desarrollaron tablas de verdad completas para los 16 códigos de entrada y la
 
 ## 📁 Archivos incluidos
 * `README.md`: Este archivo de documentación del proyecto
-* `lab2.circ`: Archivo Logisim con la implementación del circuito decodificador
+* `decodificador.circ`: Archivo Logisim con la implementación del circuito decodificador
 * `informe.pdf`: Informe completo con diccionario del display, tablas de verdad y mapas de Karnaugh
 
 ---
