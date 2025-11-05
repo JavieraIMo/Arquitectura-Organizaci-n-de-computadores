@@ -41,15 +41,15 @@ La solución utiliza únicamente lógica combinacional y secuencial implementada
 El sistema está organizado en los siguientes subcircuitos principales:
 
 - **`main`**: Circuito principal que integra todos los módulos
-- **`display_decoder`**: Decodifica el código de 4 bits para visualización en el display de 7 segmentos
-- **`state_register`**: Gestiona el estado actual del sistema y controla la transición entre nodos
+- **`decodificador_display`**: Decodifica el código de 4 bits para visualización en el display de 7 segmentos
+- **`Recorrido_grafo`**: Gestiona el estado actual del sistema y controla la transición entre nodos
   - Captura la entrada inicial solo en el primer ciclo después del reset
   - Utiliza un flip-flop detector de "primer ciclo" que conmuta multiplexores
   - Almacena el estado actual en 4 flip-flops tipo D
   - Implementa la lógica de retroalimentación para avanzar automáticamente por la ruta
-- **`next_node_logic`**: Determina el siguiente nodo según el estado actual del sistema
-- **`end_detector`**: Detecta cuando se alcanza el nodo F y detiene el sistema
-- **`display_on`**: Mantiene los display encendidos después de la primera señal con flip-flops tipo D para así alimentar la primera señal infinitamente hasta su reinicio.
+- **`nodo_siguiente`**: Determina el siguiente nodo según el estado actual del sistema
+- **`detector_e_final`**: Detecta cuando se alcanza el nodo F y detiene el sistema
+- **`mantener_display_prendido`**: Mantiene los display encendidos después de la primera señal con flip-flops tipo D para así alimentar la primera señal infinitamente hasta su reinicio.
 
 ## 💡 Implementación clave: State Register
 
@@ -92,4 +92,5 @@ Las tablas de verdad y mapas de Karnaugh utilizados incluyen:
 
 ---
 *🏛️ Laboratorio 3 - INF245 - Mayo-Junio 2025*
+
 
