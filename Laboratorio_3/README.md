@@ -2,7 +2,7 @@
 
 ## 👥 Integrantes
 - **Javiera Constanza Ibaca Morales**, Rol: 202273624-0
-- **Mauricio Godoy Cárcamo**, Rol: 202273616-k
+- **Mauricio Godoy Cárcamo**, Rol: 202304014-2
 
 ## 📝 Descripción general
 Este proyecto implementa un sistema de navegación digital para la ciudad ficticia "Bitópolis", diseñada por Don Bit. El sistema funciona como un GPS simplificado que, mediante un código de entrada de 4 bits (0000-1111), determina una ruta única desde un nodo inicial específico hasta el nodo destino común F, mostrando paso a paso cada sector visitado en un display de 7 segmentos.
@@ -92,6 +92,7 @@ Las tablas de verdad y mapas de Karnaugh utilizados incluyen:
 
 ---
 *🏛️ Laboratorio 3 - INF245 - Mayo-Junio 2025*
+
 
 
 
