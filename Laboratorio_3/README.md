@@ -91,7 +91,8 @@ Las tablas de verdad y mapas de Karnaugh utilizados incluyen:
 > 📄 **README.md** - Este archivo con información general del proyecto  
 
 ---
-*🏛️ Laboratorio 3 - INF245 - Mayo-Junio 2025*
+*🏛️ Laboratorio 3 - INF245 - Noviembre 2025*
+
 
 
 
