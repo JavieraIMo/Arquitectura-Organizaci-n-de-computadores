@@ -48,12 +48,12 @@ El sistema está organizado en los siguientes subcircuitos principales:
   - Almacena el estado actual en 4 flip-flops tipo D
   - Implementa la lógica de retroalimentación para avanzar automáticamente por la ruta
 - **`nodo_siguiente`**: Determina el siguiente nodo según el estado actual del sistema
-- **`detector_e_final`**: Detecta cuando se alcanza el nodo F y detiene el sistema
+- **`detector_de_final`**: Detecta cuando se alcanza el nodo F y detiene el sistema
 - **`mantener_display_prendido`**: Mantiene los display encendidos después de la primera señal con flip-flops tipo D para así alimentar la primera señal infinitamente hasta su reinicio.
 
 ## 💡 Implementación clave: State Register
 
-El circuito `state_register` es fundamental para el funcionamiento del sistema y tiene las siguientes características:
+El circuito `Recorrido_grafo` es fundamental para el funcionamiento del sistema y tiene las siguientes características:
 
 1. **Captura única de entrada**: Implementa un mecanismo que solo permite la entrada externa de códigos durante el primer ciclo después del reset
 2. **Sistema de conmutación**: Utiliza multiplexores controlados por un flip-flop de "primer ciclo" para alternar entre entradas externas y retroalimentación
@@ -92,5 +92,6 @@ Las tablas de verdad y mapas de Karnaugh utilizados incluyen:
 
 ---
 *🏛️ Laboratorio 3 - INF245 - Mayo-Junio 2025*
+
 
 
