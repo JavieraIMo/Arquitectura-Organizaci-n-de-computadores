@@ -2,7 +2,7 @@
 
 ## 👥 Integrantes
 - **Javiera Constanza Ibaca Morales**, Rol: 202273624-0
-- **Mauricio Godoy Cárcamo**, Rol: 202273616-k
+- **Mauricio Godoy Cárcamo**, Rol: 202304014-2
 
 ## 📝 Descripción general
 Este proyecto implementa un sistema de navegación digital para la ciudad ficticia "Bitópolis", diseñada por Don Bit. El sistema funciona como un GPS simplificado que, mediante un código de entrada de 4 bits (0000-1111), determina una ruta única desde un nodo inicial específico hasta el nodo destino común F, mostrando paso a paso cada sector visitado en un display de 7 segmentos.
@@ -41,19 +41,19 @@ La solución utiliza únicamente lógica combinacional y secuencial implementada
 El sistema está organizado en los siguientes subcircuitos principales:
 
 - **`main`**: Circuito principal que integra todos los módulos
-- **`display_decoder`**: Decodifica el código de 4 bits para visualización en el display de 7 segmentos
-- **`state_register`**: Gestiona el estado actual del sistema y controla la transición entre nodos
+- **`decodificador_display`**: Decodifica el código de 4 bits para visualización en el display de 7 segmentos
+- **`Recorrido_grafo`**: Gestiona el estado actual del sistema y controla la transición entre nodos
   - Captura la entrada inicial solo en el primer ciclo después del reset
   - Utiliza un flip-flop detector de "primer ciclo" que conmuta multiplexores
   - Almacena el estado actual en 4 flip-flops tipo D
   - Implementa la lógica de retroalimentación para avanzar automáticamente por la ruta
-- **`next_node_logic`**: Determina el siguiente nodo según el estado actual del sistema
-- **`end_detector`**: Detecta cuando se alcanza el nodo F y detiene el sistema
-- **`display_on`**: Mantiene los display encendidos después de la primera señal con flip-flops tipo D para así alimentar la primera señal infinitamente hasta su reinicio.
+- **`nodo_siguiente`**: Determina el siguiente nodo según el estado actual del sistema
+- **`detector_de_final`**: Detecta cuando se alcanza el nodo F y detiene el sistema
+- **`mantener_display_prendido`**: Mantiene los display encendidos después de la primera señal con flip-flops tipo D para así alimentar la primera señal infinitamente hasta su reinicio.
 
 ## 💡 Implementación clave: State Register
 
-El circuito `state_register` es fundamental para el funcionamiento del sistema y tiene las siguientes características:
+El circuito `Recorrido_grafo` es fundamental para el funcionamiento del sistema y tiene las siguientes características:
 
 1. **Captura única de entrada**: Implementa un mecanismo que solo permite la entrada externa de códigos durante el primer ciclo después del reset
 2. **Sistema de conmutación**: Utiliza multiplexores controlados por un flip-flop de "primer ciclo" para alternar entre entradas externas y retroalimentación
@@ -91,5 +91,9 @@ Las tablas de verdad y mapas de Karnaugh utilizados incluyen:
 > 📄 **README.md** - Este archivo con información general del proyecto  
 
 ---
-*🏛️ Laboratorio 3 - INF245 - Mayo-Junio 2025*
+*🏛️ Laboratorio 3 - INF245 - Noviembre 2025*
+
+
+
+
 
