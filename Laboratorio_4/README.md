@@ -6,8 +6,8 @@ Rol: 202273624-0
 Paralelo:200  
 
 - **Mauricio Godoy Cárcamo**  
-Rol: 202273616-k   
-Paralelo: 
+Rol: 202304014-2
+Paralelo: 200
 
 ## Especificación de algoritmos y desarrollo realizado
 
